@@ -61,9 +61,9 @@ const Navbar = () => {
               <div
                 onClick={() => setShowSearch(true)}
                 className=" flex items-center gap-2 hover:scale-[.98] 
-                  transition-all duration-300 cursor-pointer"
+                  transition-all duration-300 cursor-pointer mr-1"
               >
-                <GrSearch size={22} />{" "}
+                <GrSearch size={23} />{" "}
                 {/* <span className=" font-semibold text-base hidden lg:flex ">
                   Search
                 </span> */}
@@ -74,7 +74,7 @@ const Navbar = () => {
                 aria-label={"Cart page"}
                 className={` relative flex items-center gap-2 hover:scale-[.98] py-2 px-3  -mx-2 transition-all duration-300 cursor-pointer`}
               >
-                <FaRegHeart size={22} />
+                <FaRegHeart size={23} />
                 {/* <span className=" font-semibold text-base  hidden lg:flex  ">
                   WishList
                 </span> */}
@@ -90,7 +90,7 @@ const Navbar = () => {
                 aria-label={"Cart page"}
                 className={` relative flex items-center gap-2 hover:scale-[.98] py-2 px-3   transition-all duration-300 cursor-pointer mr-2`}
               >
-                <HiOutlineShoppingCart size={22} />{" "}
+                <HiOutlineShoppingCart size={23} />{" "}
                 {/* <span className=" font-semibold text-base  hidden lg:flex  ">
                   Cart
                 </span> */}

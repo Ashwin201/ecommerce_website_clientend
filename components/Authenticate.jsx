@@ -51,7 +51,7 @@ const Authenticate = () => {
               width={40}
               height={40}
               alt="Profile Image"
-              className={` w-8 h-8 sm:w-[40px] sm:h-[40px] rounded-full border-gray-400 border-2`}
+              className={` w-[36px] h-[36px] sm:w-[40px] sm:h-[40px] rounded-full border-gray-400 border-2`}
             />
             {menuOpen && (
               <div
