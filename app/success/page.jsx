@@ -11,10 +11,12 @@ import { redirect } from "next/navigation";
 
 const Success = ({ searchParams }) => {
   const dispatch = useDispatch();
+  if (searchParams?.session_id) {
+    dispatch(resetCart());
+  } else {
+    redirect("/");
+  }
 
-  useEffect(() => {
-    !searchParams?.session_id ? redirect("/") : dispatch(resetCart());
-  }, []);
   return (
     <div>
       <div className=" flex flex-col justify-center align-middle items-center my-8">

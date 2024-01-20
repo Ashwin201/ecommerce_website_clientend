@@ -6,9 +6,12 @@ import { BiShoppingBag } from "react-icons/bi";
 import { redirect } from "next/navigation";
 import { useEffect } from "react";
 const Error = ({ searchParams }) => {
-  useEffect(() => {
-    !searchParams?.session_id ? redirect("/") : "";
-  }, []);
+  if (searchParams?.session_id) {
+    console.log(">...");
+  } else {
+    redirect("/");
+  }
+
   return (
     <div>
       <div className=" flex flex-col justify-center align-middle items-center my-8">

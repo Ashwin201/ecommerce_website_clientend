@@ -13,10 +13,10 @@ const Footer = () => {
             </h1>
 
             <p className=" text-gray-800  dark:text-gray-400    font-medium text-base">
-              I' Ashmin Sharma, a web developer and UI designer deeply committed
-              to crafting visually appealing, functional, and responsive
-              designs. With a profound passion for transforming pixels into
-              captivating user experiences.
+              I'm Ashmin Sharma, a web developer and UI designer deeply
+              committed to crafting visually appealing, functional, and
+              responsive designs. With a profound passion for transforming
+              pixels into captivating user experiences.
             </p>
           </div>
           <div className=" flex flex-col gap-3 text-center  items-center justify-center lg:justify-start lg:text-start lg:items-start  col-span-3 md:col-span-2 lg:col-span-1 my-2">
