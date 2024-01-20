@@ -42,7 +42,7 @@ const ProductItem = ({ data, id }) => {
           <span className="font-semibold text-base block text-ellipsis overflow-hidden whitespace-nowrap  ">
             {data?.attributes?.title || <Skeleton />}
           </span>
-          <span className="text-base text-gray-700 dark:text-gray-400 font-semibold  ">
+          <span className="text-base text-gray-800  dark:text-gray-400     font-semibold  ">
             $ {`${data?.attributes?.price}.00` || <Skeleton />}
           </span>
         </div>

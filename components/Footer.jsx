@@ -6,31 +6,31 @@ const Footer = () => {
   return (
     <>
       <div className=" border-t-[.5px] border-gray-400 ">
-        <div className=" grid grid-cols-3 gap-5 md:gap-10 mt-10  place-content-start justify-start place-items-center">
+        <div className=" grid grid-cols-3 gap-5 md:gap-10 mt-10   place-items-center ">
           <div className=" flex flex-col gap-3 text-center  items-center justify-center lg:justify-start lg:text-start lg:items-start col-span-4 md:col-span-2 lg:col-span-1 ">
             <h1 className="text-gray-950 dark:text-gray-200 font-semibold mb-[2px] ">
               About
             </h1>
 
-            <p className=" text-gray-500 font-medium text-base">
+            <p className=" text-gray-800  dark:text-gray-400    font-medium text-base">
               Hi, I'm Ashmin Sharma, a web developer and UI/UX designer with a
               passion for creating beautiful, functional, and responsive design
               by making pixels magic. I look forward to the opportunity to bring
               my skills and passion to your next project.
             </p>
           </div>
-          <div className=" flex flex-col gap-3 text-center  items-center align-middle justify-start  lg:text-start lg:items-start col-span-3 md:col-span-2 lg:col-span-1 my-2">
+          <div className=" flex flex-col gap-3 text-center  items-center justify-center lg:justify-start lg:text-start lg:items-start  col-span-3 md:col-span-2 lg:col-span-1 my-2">
             <h1 className="text-gray-950 dark:text-gray-200 font-semibold mb-[2px] ">
               Contact
             </h1>
             <div className=" flex flex-col gap-2">
-              <p className=" text-gray-500 font-medium text-base">
+              <p className=" text-gray-800  dark:text-gray-400    font-medium text-base">
                 Delhi gate, Jhajjar, Haryana
               </p>
-              <p className=" text-gray-500 font-medium text-base">
+              <p className=" text-gray-800  dark:text-gray-400    font-medium text-base">
                 Mail : sharmaashmin203@gmail.com
               </p>
-              <p className=" text-gray-500 font-medium text-base">
+              <p className=" text-gray-800  dark:text-gray-400    font-medium text-base">
                 Phone : +91 860 7343 110
               </p>
             </div>
@@ -43,28 +43,28 @@ const Footer = () => {
               <Link
                 href={"/"}
                 aria-label="Head Phones"
-                className=" text-gray-500 font-medium text-base"
+                className=" text-gray-800  dark:text-gray-400    font-medium text-base"
               >
                 Head Phones
               </Link>
               <Link
                 href={"/"}
                 aria-label="Head Phones"
-                className=" text-gray-500 font-medium text-base"
+                className=" text-gray-800  dark:text-gray-400    font-medium text-base"
               >
                 AirPods
               </Link>
               <Link
                 href={"/"}
                 aria-label="Smart Watches"
-                className=" text-gray-500 font-medium text-base"
+                className=" text-gray-800  dark:text-gray-400    font-medium text-base"
               >
                 Smart Watches
               </Link>
               <Link
                 href={"/"}
                 aria-label="Bluetooth Speakers"
-                className=" text-gray-500 font-medium text-base"
+                className=" text-gray-800  dark:text-gray-400    font-medium text-base"
               >
                 Bluetooth Speakers
               </Link>
@@ -78,7 +78,7 @@ const Footer = () => {
               <Link
                 aria-label="Instagram"
                 href="https://instagram.com/ashwin.203?igshid=YmMyMTA2M2Y="
-                className=" text-gray-500 font-medium text-base"
+                className=" text-gray-800  dark:text-gray-400    font-medium text-base"
                 target="_blank"
               >
                 Instagram
@@ -86,14 +86,14 @@ const Footer = () => {
               <Link
                 href="https://github.com/Ashwin201"
                 aria-label="Github"
-                className=" text-gray-500 font-medium text-base"
+                className=" text-gray-800  dark:text-gray-400    font-medium text-base"
                 target="_blank"
               >
                 Github
               </Link>
               <Link
                 href="https://www.linkedin.com/in/ashmin-sharma-6a4867257"
-                className=" text-gray-500 font-medium text-base"
+                className=" text-gray-800  dark:text-gray-400    font-medium text-base"
                 aria-label="Linkedin"
                 target="_blank"
               >
@@ -103,7 +103,7 @@ const Footer = () => {
           </div>
         </div>
         <div className=" flex justify-between items-center flex-col-reverse sm:flex-row mt-10 gap-3">
-          <div className="text-gray-500 font-medium text-sm sm:text-base ">
+          <div className="text-gray-800  dark:text-gray-400    font-medium text-sm sm:text-base ">
             Copyright @2024. Created by Ashmin Sharma.
           </div>
           <div>

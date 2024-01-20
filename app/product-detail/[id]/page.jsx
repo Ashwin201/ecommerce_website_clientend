@@ -41,6 +41,8 @@ const SingleProduct = async ({ params }) => {
                   product?.[0]?.attributes?.img?.data?.[0]?.attributes?.url
                 }
                 alt="Product Image"
+                loading="eager"
+                priority={true}
                 className=""
                 width={500}
                 height={600}
@@ -51,7 +53,7 @@ const SingleProduct = async ({ params }) => {
             </div>
             <div className=" col-span-2 lg:col-span-1 ">
               <div className="text-lg font-medium text-gray-900 dark:text-gray-300">
-                <span className="text-gray-500 dark:text-gray-400">
+                <span className="text-gray-800   dark:text-gray-400">
                   Category :{" "}
                 </span>
                 {
@@ -62,17 +64,17 @@ const SingleProduct = async ({ params }) => {
               <div className=" text-xl sm:text-2xl font-semibold my-4 ">
                 {product?.[0]?.attributes?.title}
               </div>
-              <div className=" text-base font-medium text-gray-500 ">
+              <div className=" text-base font-medium text-gray-800 dark:text-gray-400  ">
                 {product?.[0]?.attributes?.description}
               </div>
-              <div className="text-xl text-gray-500 dark:text-gray-400 font-semibold my-4 ">
+              <div className="text-xl text-gray-800   dark:text-gray-400 font-semibold my-4 ">
                 $ {`${product?.[0]?.attributes?.price}.00`}
               </div>
               <CartButton hideFromPage={true} product={product} />
               <hr />
 
               <div className=" flex mt-4 items-center">
-                <p className="text-base font-semibold text-gray-500 dark:text-gray-600">
+                <p className="text-base font-semibold text-gray-800   dark:text-gray-600">
                   Share :
                 </p>
                 <ShareButtons id={product?.[0]?.id} />
@@ -101,16 +103,3 @@ const SingleProduct = async ({ params }) => {
 };
 
 export default SingleProduct;
-// const [data, setData] = useState([]);
-
-//   const { id } = params;
-
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       const res = await fetchDataFromApi(
-//         `/api/products?populate=*&[filters][id]=${id}`
-//       );
-//       setData(res);
-//     };
-//     fetchData();
-//   }, []);

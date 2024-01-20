@@ -27,11 +27,19 @@ const Banner = () => {
         </Link> */}
       </div>
       <div className="    ">
-        <Image
-          src={banner}
-          alt="Banner"
-          className=" w-auto min-[350px]:w-[300px] sm:w-[400px] h-auto p-5  "
-        />
+        {banner ? (
+          <Image
+            src={banner}
+            loading="eager"
+            priority={true}
+            alt="Banner"
+            className=" w-auto min-[350px]:w-[300px] sm:w-[400px] h-auto p-5  "
+          />
+        ) : (
+          <div class=" bg-gray-300 dark:bg-gray-800 rounded-lg shadow-md p-4 animate-pulse">
+            <div class="w-auto min-[350px]:w-[300px] sm:w-[400px] h-[400px] p-5"></div>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -23,7 +23,13 @@ const SignInpage = () => {
     <section className=" my-6 xl:my-10">
       <div className=" grid grid-cols-12 place-items-center gap-8 ">
         <div className=" col-span-12 xl:col-span-6">
-          <Image src={login} className="w-auto h-auto" alt="Logo" />
+          <Image
+            src={login}
+            className="w-auto h-auto"
+            alt="Logo"
+            property={true}
+            loading="eager"
+          />
         </div>
 
         <main className="flex items-center text-center xl:text-start  justify-center col-span-12  xl:col-span-6 ">

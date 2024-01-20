@@ -8,6 +8,7 @@ import { MdCelebration } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { resetCart } from "../../redux/productSlice";
 import { redirect } from "next/navigation";
+
 const Success = ({ searchParams }) => {
   const dispatch = useDispatch();
 

@@ -68,6 +68,7 @@ const Navbar = () => {
                   Search
                 </span> */}
               </div>
+
               <Link
                 href={"/wishlist"}
                 aria-label={"Cart page"}
