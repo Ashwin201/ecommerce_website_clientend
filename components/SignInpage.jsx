@@ -67,7 +67,7 @@ const SignInpage = () => {
               initial={{ opacity: 0, scale: 0.2 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="mt-4 leading-relaxed text-gray-500 font-medium"
+              className="mt-4 leading-relaxed text-gray-700 dark:text-gray-400 font-medium"
             >
               Access a comprehensive range of features by signing in, including
               the ability to explore product listings, add items to your cart,
@@ -109,13 +109,19 @@ const SignInpage = () => {
               transition={{ duration: 0.5 }}
               className="col-span-6"
             >
-              <p className="text-sm text-gray-500 font-medium">
+              <p className="text-sm text-gray-700 dark:text-gray-400 font-medium">
                 By creating an account, you agree to our
-                <a href="#" className="text-gray-700 underline">
+                <a
+                  href="#"
+                  className="text-gray-800 dark:text-gray-300 underline"
+                >
                   terms and conditions{" "}
                 </a>
                 and
-                <a href="#" className="text-gray-700 underline">
+                <a
+                  href="#"
+                  className="text-gray-800 dark:text-gray-300 underline"
+                >
                   privacy policy
                 </a>
                 .
