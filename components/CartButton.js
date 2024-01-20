@@ -67,6 +67,9 @@ const CartButton = ({ product, cartpage, hideFromPage, item }) => {
                 user: session?.user?.email,
               })
             );
+            toast.success(
+              `${product?.[0]?.attributes?.shortTitle} added to cart.`
+            );
             dispatch(addUser(session?.user?.email));
           }}
           className=" w-fit flex items-center py-2  px-3 sm:px-4 text-gray-200 font-medium text-sm bg-gradient-to-r from-slate-700 via-purple-600 to-slate-700 rounded-md cursor-pointer 

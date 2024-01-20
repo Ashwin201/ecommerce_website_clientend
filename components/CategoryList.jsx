@@ -20,7 +20,7 @@ const CategoryList = ({ categoryData }) => {
               className=" col-span-6 min-[500px]:col-span-4 md:col-span-3  rounded-md   cursor-pointer  "
             >
               <Image
-                src={apiUrl + item?.attributes?.img?.data?.attributes?.url}
+                src={apiUrl + item?.attributes?.img?.data?.[0]?.attributes?.url}
                 alt="Category"
                 className=" rounded-md  border-2  border-gray-700 hover:scale-105 transition-all duration-300"
                 width={300}
