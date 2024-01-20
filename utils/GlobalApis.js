@@ -7,10 +7,11 @@ const axiosClient = axios.create({
   },
 });
 
-const searchProducts = (query) =>
-  axiosClient.get(
+const searchProducts = (query) => {
+  const res = axiosClient.get(
     `/api/products?populate=*&filters[title][$contains]=${query}`
   );
+};
 const getLatestProducts = () => axiosClient.get(`/api/products?populate=*`);
 
 const getLatestProductsById = (id) =>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import ProductItem from "../app/product-detail/page";
 import SkeletonProductCard from "./SkeletonProductCard";
 const ProductList = ({ innerPage, data }) => {
-  console.log(data);
+  // console.log(data);
   if (!data) {
     // Handle the case where data is not defined (e.g., set it to an empty array)
     data = [];

@@ -6,10 +6,10 @@ import GlobalApis from "../utils/GlobalApis";
 
 const ProductSection = async () => {
   const data = await GlobalApis.getLatestProducts();
-  // console.log(data.data.data);
+  // console.log(data?.data?.data);
   return (
     <div>
-      <ProductList data={data.data.data} />
+      <ProductList data={data?.data?.data} />
     </div>
   );
 };
