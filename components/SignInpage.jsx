@@ -7,7 +7,7 @@ import Image from "next/image";
 import logo from "../assets/logo.webp";
 import login from "../assets/login.webp";
 import { signIn, useSession } from "next-auth/react";
-
+import { motion } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteUser } from "../redux/productSlice";
 
@@ -22,7 +22,12 @@ const SignInpage = () => {
   return (
     <section className=" my-6 xl:my-10">
       <div className=" grid grid-cols-12 place-items-center gap-8 ">
-        <div className=" col-span-12 xl:col-span-6">
+        <motion.div
+          className=" col-span-12 xl:col-span-6"
+          initial={{ opacity: 0, scale: 0.2 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           <Image
             src={login}
             className="w-auto h-auto"
@@ -30,31 +35,52 @@ const SignInpage = () => {
             property={true}
             loading="eager"
           />
-        </div>
+        </motion.div>
 
         <main className="flex items-center text-center xl:text-start  justify-center col-span-12  xl:col-span-6 ">
           <div className="">
-            <Link
-              href="/"
-              aria-label="Homepage Link"
-              className="flex   xl:justify-start  justify-center"
+            <motion.div
+              initial={{ opacity: 0, scale: 0.2 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
             >
-              <span className="sr-only">Home</span>
-              <Image src={logo} className="w-[50px] h-auto" alt="Logo" />
-            </Link>
+              <Link
+                href="/"
+                aria-label="Homepage Link"
+                className="flex   xl:justify-start  justify-center"
+              >
+                <span className="sr-only">Home</span>
+                <Image src={logo} className="w-[50px] h-auto" alt="Logo" />
+              </Link>
+            </motion.div>
 
-            <h1 className="mt-6 text-2xl font-bold bg-gradient-to-r from-slate-700 via-purple-900 to-slate-700 inline-block text-transparent bg-clip-text ">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.2 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="mt-6 text-2xl font-bold bg-gradient-to-r from-slate-700 via-purple-900 to-slate-700 inline-block text-transparent bg-clip-text "
+            >
               Welcome to shopEase 🦑
-            </h1>
+            </motion.div>
 
-            <p className="mt-4 leading-relaxed text-gray-500 font-medium">
+            <motion.p
+              initial={{ opacity: 0, scale: 0.2 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="mt-4 leading-relaxed text-gray-500 font-medium"
+            >
               Access a comprehensive range of features by signing in, including
               the ability to explore product listings, add items to your cart,
               and proceed to checkout. Unlock additional functionalities for an
               enhanced user experience.
-            </p>
+            </motion.p>
 
-            <div className="flex flex-col items-center   xl:items-start   gap-6  my-6">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.2 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center   xl:items-start   gap-6  my-6"
+            >
               <div
                 onClick={() => {
                   signIn("google");
@@ -75,9 +101,14 @@ const SignInpage = () => {
                 <BsGithub size={30} />{" "}
                 <span className="font-medium  ">Sign In with Github</span>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="col-span-6">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.2 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="col-span-6"
+            >
               <p className="text-sm text-gray-500 font-medium">
                 By creating an account, you agree to our
                 <a href="#" className="text-gray-700 underline">
@@ -89,7 +120,7 @@ const SignInpage = () => {
                 </a>
                 .
               </p>
-            </div>
+            </motion.div>
           </div>
         </main>
       </div>
