@@ -72,7 +72,7 @@ const Wishlist = () => {
                             </dt>
                             <dd className="inline text-xs font-medium">
                               {" "}
-                              &#8377; {item.price}
+                              $ {item.price}
                             </dd>
                           </div>
                         </dl>

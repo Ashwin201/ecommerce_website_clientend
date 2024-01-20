@@ -36,7 +36,7 @@ const Authenticate = () => {
         <Link
           href={"/signin"}
           aria-label="Link for SignIn"
-          className=" flex items-center gap-1 hover:scale-[.98] text-sm sm:text-base py-1 px-2 sm:py-2 sm:px-3 rounded-md text-gray-900 dark:text-gray-200 bg-gray-200 dark:bg-gray-800
+          className=" flex items-center gap-1 hover:scale-[.98] text-sm sm:text-base px-2 py-2 sm:px-3 rounded-md text-gray-900 dark:text-gray-200 bg-gray-200 dark:bg-gray-800
                   transition-all duration-300 cursor-pointer font-bold"
         >
           <LiaSignInAltSolid size={22} />{" "}
