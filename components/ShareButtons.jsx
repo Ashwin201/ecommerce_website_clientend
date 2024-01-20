@@ -16,7 +16,7 @@ import {
   PinterestIcon,
 } from "react-share";
 const ShareButtons = ({ id }) => {
-  const shareUrl = `${devUrl}/product/${id}`;
+  const shareUrl = `${devUrl}/product-detail/${id}`;
 
   return (
     <div>
