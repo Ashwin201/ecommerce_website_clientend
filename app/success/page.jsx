@@ -16,7 +16,7 @@ const Success = ({ searchParams }) => {
   // console.log(session_id);
   if (session_id) {
     dispatch(resetCart());
-  } else {
+  } else if (!session_id) {
     redirect("/");
   }
 

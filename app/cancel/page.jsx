@@ -10,7 +10,7 @@ const Error = ({ searchParams }) => {
 
   if (session_id) {
     console.log("+++++++++++++");
-  } else {
+  } else if (!session_id) {
     redirect("/");
   }
   return (
