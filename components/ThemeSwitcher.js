@@ -20,22 +20,22 @@ const ThemeSwitcher = () => {
   }
   return (
     <div>
-      {theme === "dark" ? (
+      {theme === "light" ? (
         <div
-          onClick={() => setTheme("light")}
+          onClick={() => setTheme("dark")}
           className=" flex items-center gap-2 hover:scale-[.98] py-2 px-3  hover:rounded-md text-gray-900 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-800
             transition-all duration-300 cursor-pointer"
         >
-          <HiSun size={22} />{" "}
-          <span className=" font-semibold text-base  ">Light Mode</span>
+          <PiMoonStarsFill size={24} />{" "}
+          <span className=" font-semibold text-base  ">Dark Mode</span>
         </div>
       ) : (
         <div
-          onClick={() => setTheme("dark")}
+          onClick={() => setTheme("light")}
           className=" flex items-center gap-2 hover:scale-[.98] py-2 px-3    hover:rounded-md text-gray-900 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-800 transition-all duration-300 cursor-pointer"
         >
-          <PiMoonStarsFill size={24} />{" "}
-          <span className=" font-semibold text-base  ">Dark Mode</span>
+          <HiSun size={22} />{" "}
+          <span className=" font-semibold text-base  ">Light Mode</span>
         </div>
       )}
     </div>
