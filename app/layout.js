@@ -7,7 +7,7 @@ import AuthProvider from "../Providers/AuthProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "ShopEase",
+  title: "shopEase",
   description: "Shop Smart, Shop Online",
 };
 
