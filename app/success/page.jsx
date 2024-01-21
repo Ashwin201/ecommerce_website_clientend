@@ -12,13 +12,15 @@ import { redirect } from "next/navigation";
 const Success = ({ searchParams }) => {
   const dispatch = useDispatch();
   const { session_id } = searchParams;
-
   // console.log(session_id);
-  if (session_id) {
-    dispatch(resetCart());
-  } else if (!session_id) {
-    redirect("/");
-  }
+  useEffect(() => {
+    if (session_id) {
+      // Handle the successful payment and update the UI as needed
+      dispatch(resetCart());
+    } else {
+      redirect("/");
+    }
+  }, [session_id]);
 
   return (
     <div>

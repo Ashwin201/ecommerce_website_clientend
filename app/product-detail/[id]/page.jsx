@@ -40,7 +40,7 @@ const SingleProduct = async ({ params }) => {
                 alt="Product Image"
                 loading="eager"
                 priority={true}
-                className=""
+                className=" w-auto h-auto"
                 width={500}
                 height={600}
               />

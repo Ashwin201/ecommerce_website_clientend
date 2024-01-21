@@ -47,11 +47,7 @@ const Navbar = () => {
               aria-label="HomePage Link"
               className=" flex gap-1 items-center"
             >
-              <Image
-                src={logo}
-                className="w-[35px] sm:w-[43px] h-auto"
-                alt="Logo"
-              />
+              <Image src={logo} className=" w-[43px] h-auto" alt="Logo" />
               <p className=" hidden min-[400px]:inline-block text-[18px] font-extrabold bg-gradient-to-r from-slate-700 via-purple-900 to-slate-700  text-transparent bg-clip-text">
                 shopEase
               </p>

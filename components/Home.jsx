@@ -22,16 +22,8 @@ const Banner = () => {
         <p className="mt-5 mb-8 font-medium text-base text-center xl:text-start">
           Explore the world's best Headphones, SmarthWatches and unleash
           Wireless AirPods which creates a pure and powerful listening
-          experience and pure low frequency sound effects. .{" "}
+          experience and pure low frequency sound effects.
         </p>
-
-        {/* <Link
-          href={"/"}
-          aria-label="See More"
-          className="  bg-gradient-to-r from-slate-800 via-purple-600 to-slate-800  py-[10px] px-5  hover:scale-95 transition-all duration-300  rounded-md text-white"
-        >
-          See more
-        </Link> */}
       </motion.div>
       <motion.div
         initial={{ opacity: 0, scale: 0.2 }}

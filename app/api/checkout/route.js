@@ -24,8 +24,11 @@ export const POST = async (request) => {
       payment_method_types: ["card"],
       line_items: updatedItems,
       mode: "payment",
+      shipping_address_collection: {
+        allowed_countries: ["US", "IN", "NP", "JP"],
+      },
       success_url: `${process.env.NEXT_PUBLIC_DEV_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${process.env.NEXT_PUBLIC_DEV_URL}/cancel?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${process.env.NEXT_PUBLIC_DEV_URL}`,
       metadata: {
         email,
       },
