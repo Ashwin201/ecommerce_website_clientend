@@ -33,7 +33,6 @@ const Banner = () => {
         {banner ? (
           <Image
             src={banner}
-            loading="eager"
             priority={true}
             alt="Banner"
             className=" w-auto min-[350px]:w-[300px] sm:w-[400px] h-auto p-5  "

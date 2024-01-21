@@ -7,13 +7,22 @@ import { BiShoppingBag } from "react-icons/bi";
 import { MdCelebration } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { resetCart } from "../../redux/productSlice";
-import { redirect } from "next/navigation";
-
-const Success = ({ searchParams }) => {
+import { redirect, usePathname } from "next/navigation";
+const SuccessPage = ({ searchParams }) => {
   const dispatch = useDispatch();
   const { session_id } = searchParams;
+  // console.log(session_id);
+  useEffect(() => {
+    if (session_id) {
+      // Handle the successful payment and update the UI as needed
+      dispatch(resetCart());
+      return;
+    } else {
+      redirect("/");
+    }
+  }, [session_id]);
 
-  return session_id && dispatch(resetCart()) ? (
+  return (
     <div>
       <div className=" flex flex-col justify-center align-middle items-center my-8">
         <Image
@@ -23,7 +32,7 @@ const Success = ({ searchParams }) => {
         />
         <div className=" mt-6">
           <h1 className=" font-bold text-2xl text-center sm:text-3xl bg-gradient-to-r from-slate-700 via-purple-900 to-slate-700 inline-block text-transparent bg-clip-text mb-6">
-            Congratulations! Order created successfully.
+            Congratulations! Your order has been created successfully.
           </h1>
         </div>
         <Link
@@ -38,9 +47,7 @@ const Success = ({ searchParams }) => {
         </Link>
       </div>
     </div>
-  ) : (
-    redirect("/")
   );
 };
 
-export default Success;
+export default SuccessPage;

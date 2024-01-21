@@ -14,7 +14,7 @@ const Navbar = () => {
   const [showSearch, setShowSearch] = useState(false);
 
   const { productData, favouriteData } = useSelector((state) => state.products);
-  console.log(productData);
+  // console.log(productData);
   const handleHeader = () => {
     const offset = window.scrollY;
     if (offset > 100) {

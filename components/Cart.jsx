@@ -184,13 +184,13 @@ const Cart = () => {
         </div>
       ) : (
         <>
-          <div className=" flex flex-col justify-center align-middle items-center my-8">
+          <div className=" flex flex-col justify-center align-middle items-center mt-2 mb-6">
             <Image
               src={emptyCart}
               alt="Empty Cart "
-              className=" h-[350px] w-auto"
+              className="w-[400px] h-auto"
             />
-            <div className="">
+            <div className="mt-6">
               <h1 className=" font-bold text-2xl sm:text-3xl bg-gradient-to-r from-slate-700 via-purple-900 to-slate-700 inline-block text-transparent bg-clip-text mb-6">
                 Oops! Your Cart Is Empty.
               </h1>
