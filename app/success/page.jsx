@@ -12,17 +12,8 @@ import { redirect } from "next/navigation";
 const Success = ({ searchParams }) => {
   const dispatch = useDispatch();
   const { session_id } = searchParams;
-  // console.log(session_id);
-  useEffect(() => {
-    if (session_id) {
-      // Handle the successful payment and update the UI as needed
-      dispatch(resetCart());
-    } else {
-      redirect("/");
-    }
-  }, [session_id]);
 
-  return (
+  return session_id && dispatch(resetCart()) ? (
     <div>
       <div className=" flex flex-col justify-center align-middle items-center my-8">
         <Image
@@ -47,6 +38,8 @@ const Success = ({ searchParams }) => {
         </Link>
       </div>
     </div>
+  ) : (
+    redirect("/")
   );
 };
 
