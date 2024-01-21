@@ -24,7 +24,7 @@ const ProductItem = ({ data, id }) => {
           {data ? (
             <>
               <Image
-                src={apiUrl + data?.attributes?.img?.data?.[0]?.attributes?.url}
+                src={data?.attributes?.img?.data?.[0]?.attributes?.url}
                 alt={data?.attributes?.title}
                 className="  object-cover  hover:group:scale-105"
                 width={120}

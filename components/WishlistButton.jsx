@@ -24,9 +24,7 @@ const WishlistButton = ({ product }) => {
             shortTitle: product?.[0]?.attributes?.shortTitle,
             description: product?.[0]?.attributes?.description,
             price: product?.[0]?.attributes?.price,
-            img:
-              apiUrl +
-              product?.[0]?.attributes?.img?.data?.[0]?.attributes?.url,
+            img: product?.[0]?.attributes?.img?.data?.[0]?.attributes?.url,
           })
         );
 

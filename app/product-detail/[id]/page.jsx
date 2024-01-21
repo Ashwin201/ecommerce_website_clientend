@@ -36,10 +36,7 @@ const SingleProduct = async ({ params }) => {
           <div className="grid grid-cols-2 gap-5 lg:gap-5 xl:gap-20 place-items-center mt-3">
             <div className=" relative col-span-2 lg:col-span-1 p-5 ">
               <Image
-                src={
-                  apiUrl +
-                  product?.[0]?.attributes?.img?.data?.[0]?.attributes?.url
-                }
+                src={product?.[0]?.attributes?.img?.data?.[0]?.attributes?.url}
                 alt="Product Image"
                 loading="eager"
                 priority={true}
@@ -74,7 +71,7 @@ const SingleProduct = async ({ params }) => {
               <hr />
 
               <div className=" flex mt-4 items-center">
-                <p className="text-base font-semibold text-gray-800   dark:text-gray-600">
+                <p className="text-base font-semibold text-gray-700   dark:text-gray-400">
                   Share :
                 </p>
                 <ShareButtons id={product?.[0]?.id} />

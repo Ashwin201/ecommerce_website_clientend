@@ -59,9 +59,7 @@ const CartButton = ({ product, cartpage, hideFromPage, item }) => {
                 title: product?.[0]?.attributes?.title,
                 shortTitle: product?.[0]?.attributes?.shortTitle,
                 description: product?.[0]?.attributes?.description,
-                img:
-                  apiUrl +
-                  product?.[0]?.attributes?.img?.data?.[0]?.attributes?.url,
+                img: product?.[0]?.attributes?.img?.data?.[0]?.attributes?.url,
                 price: product?.[0]?.attributes?.price,
                 quantity: product?.[0]?.attributes?.quantity,
                 user: session?.user?.email,

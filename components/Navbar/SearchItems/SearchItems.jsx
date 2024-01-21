@@ -57,7 +57,7 @@ const SearchItems = ({ showSearch, setShowSearch }) => {
               className=" mx-4 relative flex items-center justify-start lg:justify-center    gap-3 pb-2  hover:scale-[.99] transition ease-in-out duration-300 cursor-pointer  "
             >
               <Image
-                src={apiUrl + item?.attributes?.img?.data?.[0]?.attributes?.url}
+                src={item?.attributes?.img?.data?.[0]?.attributes?.url}
                 alt="Image Product"
                 width={50}
                 height={50}
