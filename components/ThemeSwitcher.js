@@ -1,7 +1,6 @@
 "use client";
 import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
-import { BsSun, BsMoonStarsFill } from "react-icons/bs";
 import { PiMoonStarsFill } from "react-icons/pi";
 import { HiSun } from "react-icons/hi";
 

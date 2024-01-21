@@ -11,7 +11,10 @@ import { redirect } from "next/navigation";
 
 const Success = ({ searchParams }) => {
   const dispatch = useDispatch();
-  if (searchParams?.session_id) {
+  const { session_id } = searchParams;
+
+  // console.log(session_id);
+  if (session_id) {
     dispatch(resetCart());
   } else {
     redirect("/");
@@ -26,7 +29,7 @@ const Success = ({ searchParams }) => {
           className=" h-[350px] w-auto"
         />
         <div className=" mt-6">
-          <h1 className=" font-bold text-2xl sm:text-3xl bg-gradient-to-r from-slate-700 via-purple-900 to-slate-700 inline-block text-transparent bg-clip-text mb-6">
+          <h1 className=" font-bold text-2xl text-center sm:text-3xl bg-gradient-to-r from-slate-700 via-purple-900 to-slate-700 inline-block text-transparent bg-clip-text mb-6">
             Congratulations! Order created successfully.
           </h1>
         </div>
