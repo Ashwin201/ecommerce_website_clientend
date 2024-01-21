@@ -7,18 +7,19 @@ import { BiShoppingBag } from "react-icons/bi";
 import { MdCelebration } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { resetCart } from "../../redux/productSlice";
-import { redirect, usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 const SuccessPage = ({ searchParams }) => {
   const dispatch = useDispatch();
   const { session_id } = searchParams;
+  const router = useRouter();
   // console.log(session_id);
   useEffect(() => {
-    if (session_id) {
-      // Handle the successful payment and update the UI as needed
-      dispatch(resetCart());
-      return;
+    const hasPermission = session_id;
+
+    if (!hasPermission) {
+      router.push("/");
     } else {
-      redirect("/");
+      dispatch(resetCart());
     }
   }, [session_id]);
 
