@@ -110,7 +110,7 @@ const Wishlist = () => {
         </div>
       ) : (
         <>
-          <div className=" flex flex-col justify-center align-middle items-center mt-2 mb-6 ">
+          <div className=" flex flex-col   items-center w-full h-[74vh] mt-6 ">
             <Image
               src={emptyWishlist}
               alt="Empty Wishlist "

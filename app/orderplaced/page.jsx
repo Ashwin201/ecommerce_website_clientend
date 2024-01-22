@@ -14,12 +14,16 @@ const SuccessPage = ({ searchParams }) => {
   const router = useRouter();
   // console.log(session_id);
   useEffect(() => {
-    const hasPermission = session_id;
+    try {
+      const hasPermission = session_id;
 
-    if (!hasPermission) {
-      router.push("/");
-    } else {
-      dispatch(resetCart());
+      if (!hasPermission) {
+        router.push("/");
+      } else {
+        dispatch(resetCart());
+      }
+    } catch (error) {
+      console.error("Error in useEffect:", error);
     }
   }, [session_id]);
 

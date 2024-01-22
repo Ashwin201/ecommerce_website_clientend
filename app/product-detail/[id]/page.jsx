@@ -38,9 +38,9 @@ const SingleProduct = async ({ params }) => {
               <Image
                 src={product?.[0]?.attributes?.img?.data?.[0]?.attributes?.url}
                 alt="Product Image"
+                loading="eager"
                 priority={true}
-                className=" w-auto h-auto"
-                width={500}
+                width={600}
                 height={600}
               />
               <div className="absolute top-2   right-2">

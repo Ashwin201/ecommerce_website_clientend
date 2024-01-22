@@ -184,7 +184,7 @@ const Cart = () => {
         </div>
       ) : (
         <>
-          <div className=" flex flex-col justify-center align-middle items-center mt-2 mb-6">
+          <div className=" flex flex-col justify-center items-center w-full min-h-[74vh]">
             <Image
               src={emptyCart}
               alt="Empty Cart "

@@ -14,7 +14,6 @@ import { useSession } from "next-auth/react";
 const CartButton = ({ product, cartpage, hideFromPage, item }) => {
   const dispatch = useDispatch();
   const { data: session } = useSession();
-  console.log(product?.[0]?.attributes);
 
   return (
     <div className=" flex flex-wrap items-center mb-6 gap-2">
