@@ -21,22 +21,15 @@ const ProductItem = ({ data, id }) => {
         className=" z-10    gap-4 sm:gap-10    "
       >
         <div className=" relative flex items-center justify-center p-2 mb-2 rounded-md border-2 border-gray-300 dark:border-gray-800 bg-[#f8faff] dark:bg-gray-950">
-          {data ? (
-            <>
-              <Image
-                src={data?.attributes?.img?.data?.[0]?.attributes?.url}
-                alt={data?.attributes?.title}
-                className="  object-cover  hover:group:scale-105"
-                width={120}
-                height={90}
-              />
-            </>
-          ) : (
-            <>
-              <SkeletonProductCard />
-              <SkeletonProductCard />
-            </>
-          )}
+          <>
+            <Image
+              src={data?.attributes?.img?.data?.[0]?.attributes?.url}
+              alt={data?.attributes?.title}
+              className="  object-cover  hover:group:scale-105"
+              width={120}
+              height={90}
+            />
+          </>
         </div>
         <div className="flex flex-col gap-1">
           <span className="font-semibold text-base block text-ellipsis overflow-hidden whitespace-nowrap  ">
