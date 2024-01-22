@@ -9,7 +9,7 @@ const CategoryPage1 = () => {
   //   redirect("/");
   // }
   return (
-    <div className="flex flex-col justify-center items-center w-full min-h-[74vh]">
+    <div className="flex flex-col justify-start  w-full min-h-[74vh] -mt-20">
       <CategorySection />
     </div>
   );

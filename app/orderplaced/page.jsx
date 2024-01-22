@@ -10,14 +10,12 @@ import { resetCart } from "../../redux/productSlice";
 import { useRouter } from "next/navigation";
 const SuccessPage = ({ searchParams }) => {
   const dispatch = useDispatch();
-  const { session_id } = searchParams;
+  const { success } = searchParams;
   const router = useRouter();
-  // console.log(session_id);
+  console.log(success);
   useEffect(() => {
     try {
-      const hasPermission = session_id;
-
-      if (!hasPermission) {
+      if (success !== "true") {
         router.push("/");
       } else {
         dispatch(resetCart());
@@ -25,7 +23,7 @@ const SuccessPage = ({ searchParams }) => {
     } catch (error) {
       console.error("Error in useEffect:", error);
     }
-  }, [session_id]);
+  }, [success]);
 
   return (
     <div>

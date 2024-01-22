@@ -29,7 +29,7 @@ export const POST = async (request) => {
         allowed_countries: ["US", "IN", "NP", "JP"],
       },
 
-      success_url: `${devUrl}/orderplaced?session_id={CHECKOUT_SESSION_ID}`,
+      success_url: `${devUrl}/orderplaced?success=true?ThankYouForPurchasingProudctsFromshopEase`,
       cancel_url: `${devUrl}`,
       metadata: {
         email,
