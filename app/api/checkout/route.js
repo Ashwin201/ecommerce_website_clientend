@@ -28,7 +28,7 @@ export const POST = async (request) => {
         allowed_countries: ["US", "IN", "NP", "JP"],
       },
 
-      success_url: `${process.env.NEXT_PUBLIC_DEV_URL}/orderplaced?session_id={CHECKOUT_SESSION_ID}`,
+      success_url: `https://shopease-two.vercel.app/orderplaced?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${process.env.NEXT_PUBLIC_DEV_URL}`,
       metadata: {
         email,

@@ -29,7 +29,7 @@ const SuccessPage = ({ searchParams }) => {
 
   return (
     <div>
-      <div className=" flex flex-col justify-center align-middle items-center my-8">
+      <div className=" flex flex-col justify-center items-center w-full min-h-[74vh] ">
         <Image
           src={successImg}
           alt="Empty Cart "

@@ -66,7 +66,7 @@ const Cart = () => {
   return (
     <>
       {productData.length > 0 ? (
-        <div className="lg:mx-10 mb-10">
+        <div className="flex flex-col justify-start w-full min-h-[74vh]">
           <h1 className=" relative font-bold  text-2xl sm:text-3xl bg-gradient-to-r from-slate-700 via-purple-900 to-slate-700 inline-block text-transparent bg-clip-text ">
             Your Cart
             <span className=" absolute left-0 -bottom-2 h-[2.5px] rounded-sm w-20 bg-gradient-to-r from-slate-700 via-purple-900 to-slate-700 "></span>

@@ -9,8 +9,6 @@ import { apiUrl } from "../../../utils/URLs";
 import Breadcrumb from "../../../components/Breadcrumb";
 import { FaCartPlus } from "react-icons/fa6";
 import CartButton from "../../../components/CartButton";
-import SkeletonProductInfo from "../../../components/SkeletonProductInfo";
-import SkeletonProductCard from "../../../components/SkeletonProductCard";
 
 import WishlistButton from "../../../components/WishlistButton";
 const SingleProduct = async ({ params }) => {

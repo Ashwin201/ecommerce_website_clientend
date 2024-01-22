@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 // import { apiUrl } from "../utils/URLs";
 import ProductItem from "../app/product-detail/page";
-import SkeletonProductCard from "./SkeletonProductCard";
 const ProductList = ({ innerPage, data }) => {
   // console.log(data);
   if (!data) {

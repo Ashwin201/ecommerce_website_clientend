@@ -30,14 +30,14 @@ const Wishlist = () => {
   return (
     <section>
       {favouriteData.length > 0 ? (
-        <div className="mx-auto max-w-screen-xl px-4 mb-6  sm:px-6  lg:px-8">
+        <div className="mx-auto max-w-screen-xl px-4 mb-6  sm:px-6  lg:px-8 flex flex-col  justify-start  w-full min-h-[74vh]">
           <div className="mx-auto max-w-3xl">
             <h1 className=" relative font-bold tracking-wide  text-2xl sm:text-3xl bg-gradient-to-r from-slate-700 via-purple-900 to-slate-700 inline-block text-transparent bg-clip-text ">
               Your Wishlist
               <span className=" absolute left-0 -bottom-2 h-[2.5px] rounded-sm w-20 bg-gradient-to-r from-slate-700 via-purple-900 to-slate-700 "></span>
             </h1>
 
-            <div className="mt-8">
+            <div className="mt-12">
               <ul className=" flex flex-col gap-6 ">
                 {Products &&
                   Products.map((item) => (
@@ -110,7 +110,7 @@ const Wishlist = () => {
         </div>
       ) : (
         <>
-          <div className=" flex flex-col   items-center w-full h-[74vh] mt-6 ">
+          <div className=" flex flex-col   items-center w-full min-h-[74vh] mt-6 ">
             <Image
               src={emptyWishlist}
               alt="Empty Wishlist "
