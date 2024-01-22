@@ -43,9 +43,13 @@ const Breadcrumb = ({ first, second }) => {
           </svg>
         </li>
 
-        <li className="block transition hover:text-gray-700 dark:hover:text-gray-200">
+        <Link
+          href={`/${first}`}
+          aria-label="Category"
+          className="block transition hover:text-gray-700 dark:hover:text-gray-200"
+        >
           {first}
-        </li>
+        </Link>
 
         <li className="rtl:rotate-180">
           <svg
