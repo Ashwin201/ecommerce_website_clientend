@@ -12,7 +12,7 @@ import { RiDeleteBin5Fill } from "react-icons/ri";
 import emptyWishlist from "../assets/wishlist.webp";
 import { BiShoppingBag } from "react-icons/bi";
 import { useSession } from "next-auth/react";
-
+import { motion } from "framer-motion";
 const Wishlist = () => {
   const dispatch = useDispatch();
   const { favouriteData, userInfo } = useSelector((store) => store.products);
@@ -111,18 +111,25 @@ const Wishlist = () => {
       ) : (
         <>
           <div className=" flex flex-col   items-center w-full min-h-[74vh] mt-6 ">
-            <Image
-              src={emptyWishlist}
-              alt="Empty Wishlist "
-              className=" w-[400px] h-auto"
-            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.2 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+            >
+              <Image
+                src={emptyWishlist}
+                alt="Empty Cart "
+                priority={true}
+                className="w-[400px] h-auto"
+              />
+            </motion.div>
             <div className="-mt-10">
-              <h1 className=" font-bold text-2xl sm:text-3xl bg-gradient-to-r from-slate-700 via-purple-900 to-slate-700 inline-block text-transparent bg-clip-text mb-6">
+              <h1 className=" font-bold text-2xl text-center sm:text-3xl bg-gradient-to-r from-slate-700 via-purple-900 to-slate-700 inline-block text-transparent bg-clip-text mb-6">
                 Oops! Your Wishlist Is Empty.
               </h1>
             </div>
             <Link
-              href={"/"}
+              href={"/products"}
               aria-label="Home Link"
               className=" flex gap-2 items-center justify-center align-middle py-2  px-3 sm:px-4 text-gray-200 font-medium text-sm bg-gradient-to-r from-slate-700 via-purple-600 to-slate-700 
                 rounded-md cursor-pointer 
