@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <>
       <div className=" border-t-[.5px] border-gray-400 ">
-        <div className=" grid grid-cols-3 gap-5 md:gap-10 mt-10   place-items-center ">
-          <div className=" flex flex-col gap-3 text-center  items-center justify-center lg:justify-start lg:text-start lg:items-start col-span-4 md:col-span-2 lg:col-span-1 ">
+        <div className=" grid col-span-3 md:col-span-2 lg:rid-cols-4 gap-5 md:gap-10 mt-10   place-items-center  ">
+          <div className=" flex flex-col gap-3 text-center  items-center justify-center col-span-3 md:col-span-2 lg:col-span-1 ">
             <h1 className="text-gray-950 dark:text-gray-200 font-semibold mb-[2px] ">
               About
             </h1>
@@ -19,7 +19,7 @@ const Footer = () => {
               for transforming pixels into captivating user experiences.
             </p>
           </div>
-          <div className=" flex flex-col gap-3 text-center  items-center justify-center lg:justify-start lg:text-start lg:items-start  col-span-3 md:col-span-2 lg:col-span-1 my-2">
+          <div className=" flex flex-col gap-3 text-center  items-center justify-center  col-span-3 md:col-span-2 lg:col-span-1 my-2">
             <h1 className="text-gray-950 dark:text-gray-200 font-semibold mb-[2px] ">
               Contact
             </h1>
@@ -35,7 +35,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          {/* <div className=" flex flex-col gap-3 text-center  items-center justify-center lg:justify-start lg:text-start lg:items-start col-span-4 md:col-span-2 lg:col-span-1 ">
+          {/* <div className=" flex flex-col gap-3 text-center  items-center justify-center col-span-4 md:col-span-2 lg:col-span-1 ">
             <h1 className="text-gray-950 dark:text-gray-200 font-semibold mb-[2px]">
               Categories
             </h1>
@@ -70,7 +70,7 @@ const Footer = () => {
               </Link>
             </div>
           </div> */}
-          <div className=" flex flex-col gap-3 text-center  items-center justify-center lg:justify-start lg:text-start lg:items-start col-span-3 md:col-span-2 lg:col-span-1 mb-2  mt-2 md:mt-0  ">
+          <div className=" flex flex-col gap-3 text-center  items-center justify-center col-span-3 md:col-span-2 lg:col-span-1 mb-2  mt-2 md:mt-0  ">
             <h1 className="text-gray-950 dark:text-gray-200 font-semibold mb-[2px]">
               Pages
             </h1>
