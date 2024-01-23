@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { MdClose } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
-import { apiUrl } from "../../../utils/URLs";
 import SearchApi from "../../../utils/SearchApi";
 
 const SearchItems = ({ showSearch, setShowSearch }) => {

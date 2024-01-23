@@ -37,9 +37,10 @@ const SingleProduct = async ({ params }) => {
                 src={product?.[0]?.attributes?.img?.data?.[0]?.attributes?.url}
                 alt="Product Image"
                 loading="eager"
-                priority={true}
+                priority
                 width={600}
                 height={600}
+                className=" w-full h-full "
               />
               <div className="absolute top-2   right-2">
                 <WishlistButton product={product} />
