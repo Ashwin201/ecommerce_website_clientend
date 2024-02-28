@@ -83,7 +83,7 @@ const Wishlist = () => {
                           onClick={() => {
                             dispatch(deleteFavouriteProduct(item?.id));
                             toast.success(
-                              `${item.shortTitle} removed from cart.`
+                              `${item.shortTitle} removed from wishlist.`
                             );
                           }}
                         >
