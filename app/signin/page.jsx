@@ -8,7 +8,7 @@ const SignIn = () => {
   const router = useRouter();
   if (status === "loading" || status === "authenticated") {
     router.push("/");
-    router.refresh();
+    return;
   }
   return (
     status === "unauthenticated" && (

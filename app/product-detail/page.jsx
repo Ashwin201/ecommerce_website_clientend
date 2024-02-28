@@ -3,13 +3,13 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { apiUrl } from "../../utils/URLs";
-
-import { IoIosHeart } from "react-icons/io";
-import { redirect, usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 const ProductItem = ({ data, id }) => {
+  const router = useRouter();
   const pathName = usePathname();
   if (pathName === "/product-detail") {
-    redirect("/");
+    router.push("/");
+    return;
   }
   // console.log(data);
   return (
