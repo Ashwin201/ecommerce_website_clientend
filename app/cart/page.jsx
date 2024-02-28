@@ -7,10 +7,7 @@ import { useRouter } from "next/navigation";
 const CartPage = () => {
   const { data: session } = useSession();
   const router = useRouter();
-  if (session) {
-    console.log("session is  active");
-    return;
-  } else {
+  if (!session) {
     router.push("/signin");
     return;
   }

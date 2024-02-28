@@ -17,9 +17,7 @@ const SuccessPage = () => {
 
   const { data: session } = useSession();
   const router = useRouter();
-  if (session) {
-    console.log("session is  active");
-  } else {
+  if (!session) {
     router.push("/signin");
     return;
   }
