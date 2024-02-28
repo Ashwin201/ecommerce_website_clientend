@@ -9,12 +9,20 @@ import { useDispatch } from "react-redux";
 import { resetCart } from "../../redux/productSlice";
 import order from "../../assets/order.webp";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
 const SuccessPage = () => {
   const dispatch = useDispatch();
   dispatch(resetCart());
 
-  // const { session_id } = searchParams;
-  // console.log(session_id);
+  const { data: session } = useSession();
+  const router = useRouter();
+  if (session) {
+    console.log("session is  active");
+  } else {
+    router.push("/signin");
+    return;
+  }
 
   return (
     <div>

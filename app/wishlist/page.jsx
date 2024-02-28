@@ -6,8 +6,9 @@ import { useRouter } from "next/navigation";
 const WishListPage = () => {
   const { data: session } = useSession();
   const router = useRouter();
-  if (session?.user?.image) {
+  if (session) {
     console.log("session is  active");
+    return;
   } else {
     router.push("/signin");
     return;
